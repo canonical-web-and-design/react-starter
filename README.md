@@ -20,9 +20,9 @@ This provides a minimal react starter application with some sensible defaults:
  
 ### Vanilla integration
 
-* SASS integration via `sass-loader` and `node-sass`.
-* Example vanilla import in `components/hello_world.js`
-* Not currently using [vanilla-framework-react](https://github.com/vanilla-framework/vanilla-framework-react), but this should be reassed in the course of development.
+* SASS integration via `sass-loader` and `node-sass-chokidar`.
+* Using [vanilla-framework-react](https://github.com/vanilla-framework/vanilla-framework-react)
+* Example vanilla component usage in `components/hello_world.js`
 
 ### Misc
 * Redux - state management with actions and reducers.
