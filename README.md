@@ -14,6 +14,7 @@ This provides a minimal react starter application with some sensible defaults:
 
 * ES6
 * environment based configuration
+* es-lint (default configuration for now, including `eslint-plugin-react`)
 * JS/CSS minification/uglification.
 * dev server with hot module replacement
  
@@ -30,4 +31,12 @@ This provides a minimal react starter application with some sensible defaults:
 ### Not Included, but probably should be
 
 * [ravenjs - JS sentry client](https://github.com/getsentry/raven-js)
+* [react-router](https://github.com/ReactTraining/react-router)
+
+### Not Included, project dependant 
+
 * [react-apollo - react integration for Apollo GraphQL client](https://github.com/apollographql/react-apollo)
+
+### Bike shed topics
+* Should we use [standard-js](https://standardjs.com/)?
+* Should we use [prettier](https://github.com/prettier/prettier)?
