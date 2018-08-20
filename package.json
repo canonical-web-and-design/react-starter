@@ -1,12 +1,31 @@
 {
   "name": "webteam-react-starter",
   "version": "1.0.0",
+  "private": false,
   "description": "Starter project for web team react projects.",
+  "repository": "https://github.com/canonical-webteam/webteam-react-starter",
+  "license": "AGPL-3.0",
+  "author": "Kit Randel <kit.randel@canonical.com>",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --config webpack.dev.js",
     "build": "NODE_ENV=production webpack --mode production --config webpack.prod.js",
-    "lint": "eslint ./src/**/*.js"
+    "coverage": "jest --coverage",
+    "lint": "eslint ./src/",
+    "start": "webpack-dev-server --mode development --open --config webpack.dev.js",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ]
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>__tests__/setup/setupEnzyme.js",
+    "testPathIgnorePatterns": [
+      "<rootDir>/__tests__/setup/"
+    ]
   },
   "husky": {
     "hooks": {
@@ -20,17 +39,10 @@
       "git add"
     ]
   },
-  "repository": "https://github.com/canonical-webteam/webteam-react-starter",
-  "author": "Kit Randel <kit.randel@canonical.com>",
-  "license": "AGPL-3.0",
-  "private": false,
-  "babel": {
-    "presets": [
-      "env",
-      "react"
-    ]
-  },
   "dependencies": {
+    "enzyme": "^3.4.4",
+    "enzyme-adapter-react-16": "^1.2.0",
+    "enzyme-to-json": "^3.3.4",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "lodash": "^4.17.10",
@@ -43,6 +55,7 @@
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
+    "babel-jest": "^23.4.2",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
@@ -54,11 +67,13 @@
     "eslint-plugin-react": "^7.11.1",
     "html-webpack-plugin": "^3.2.0",
     "husky": "^1.0.0-rc.13",
+    "jest": "^23.5.0",
     "lint-staged": "^7.2.2",
     "mini-css-extract-plugin": "^0.4.0",
     "node-sass-chokidar": "^1.3.0",
     "optimize-css-assets-webpack-plugin": "^4.0.2",
     "prettier": "^1.14.2",
+    "react-test-renderer": "^16.4.2",
     "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",
     "uglifyjs-webpack-plugin": "^1.2.5",

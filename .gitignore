@@ -4,5 +4,8 @@ node_modules/
 # Build Artifacts
 dist/
 
+# Test Artifacts
+coverage/
+
 # Misc
 *.log
