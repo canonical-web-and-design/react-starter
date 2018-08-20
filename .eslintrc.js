@@ -1,38 +1,19 @@
 module.exports = {
-  "env": {
-    "browser": true,
-    "es6": true
+  env: {
+    browser: true,
+    es6: true
   },
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended"
-  ],
-  "parserOptions": {
-    "ecmaFeatures": {
-      "experimentalObjectRestSpread": true,
-      "jsx": true
+  extends: ["airbnb", "prettier", "plugin:react/recommended"],
+  parserOptions: {
+    ecmaVersion: 7,
+    ecmaFeatures: {
+      jsx: true
     },
-    "sourceType": "module"
+    sourceType: "module"
   },
-  "plugins": [
-    "react"
-  ],
-  "rules": {
-    "indent": [
-      "error",
-      2
-    ],
-    "linebreak-style": [
-      "error",
-      "unix"
-    ],
-    "quotes": [
-      "error",
-      "single"
-    ],
-    "semi": [
-      "error",
-      "always"
-    ]
+  plugins: ["react"],
+  rules: {
+    // https://github.com/facebook/create-react-app/issues/87#issuecomment-234627904
+    "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }]
   }
 };
