@@ -12,9 +12,11 @@ This provides a minimal react starter application with some sensible defaults:
 
 ### Webpack 4 
 
-* ES6
+* ES7/2016
 * environment based configuration
-* es-lint (default configuration for now, including `eslint-plugin-react`)
+* es-lint with AirBnB style 
+* Prettier
+* Precommit hooks for linting and formatting.
 * JS/CSS minification/uglification.
 * dev server with hot module replacement
  
@@ -36,7 +38,3 @@ This provides a minimal react starter application with some sensible defaults:
 ### Not Included, project dependant 
 
 * [react-apollo - react integration for Apollo GraphQL client](https://github.com/apollographql/react-apollo)
-
-### Bike shed topics
-* Should we use [standard-js](https://standardjs.com/)?
-* Should we use [prettier](https://github.com/prettier/prettier)?

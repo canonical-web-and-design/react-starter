@@ -1,15 +1,13 @@
-import React, { Component } from 'react';
+import React from "react";
 
-import HelloWorld from '../components/hello_world';
+import HelloWorld from "./hello_world";
 
-export default class App extends Component {
-  render() {
-    return (
-      <div className="row">
-        <div className="col-12">
-          <HelloWorld />
-        </div>
-      </div>
-    );
-  }
-}
+const myComponent = () => (
+  <div className="row">
+    <div className="col-12">
+      <HelloWorld />
+    </div>
+  </div>
+);
+
+export { myComponent as default };
