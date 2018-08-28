@@ -22,9 +22,9 @@
     ]
   },
   "jest": {
-    "setupTestFrameworkScriptFile": "<rootDir>__tests__/setup/setupEnzyme.js",
+    "setupTestFrameworkScriptFile": "<rootDir>/src/__tests__/setup/setupEnzyme.js",
     "testPathIgnorePatterns": [
-      "<rootDir>/__tests__/setup/"
+      "<rootDir>/src/__tests__/setup/"
     ]
   },
   "husky": {
