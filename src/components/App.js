@@ -1,6 +1,6 @@
 import React from "react";
 
-import HelloWorld from "./hello_world";
+import HelloWorld from "./HelloWorld";
 
 const myComponent = () => (
   <div className="row">
