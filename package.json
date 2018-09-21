@@ -45,6 +45,7 @@
     "enzyme-to-json": "^3.3.4",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
+    "file-loader": "^2.0.0",
     "lodash": "^4.17.10",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",

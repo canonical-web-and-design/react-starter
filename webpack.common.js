@@ -11,6 +11,16 @@ module.exports = {
           loader: 'babel-loader'
         }
       },
+      {
+        test: /\.(png|jpg|jpeg|gif|svg)$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            outputPath: 'static/images/',
+            publicPath: 'static/images/'
+          }
+        }
+      }
     ]
   },
   plugins: [
