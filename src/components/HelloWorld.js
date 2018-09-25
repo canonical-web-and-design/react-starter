@@ -10,8 +10,8 @@ const HelloWorld = () => (
         alt="Ubuntu circle of friends"
         width="32"
         height="32"
+        className="ubuntu-logo"
       />
-      {" "}
       Hello Webteam!
     </h1>
     <Button brand value="Hello" />

@@ -25,7 +25,10 @@
     "setupTestFrameworkScriptFile": "<rootDir>/src/__tests__/setup/setupEnzyme.js",
     "testPathIgnorePatterns": [
       "<rootDir>/src/__tests__/setup/"
-    ]
+    ],
+    "moduleNameMapper": {
+      "\\.(png|jpg|jpeg|gif|svg)$": "<rootDir>/src/__mocks__/fileMock.js"
+    }
   },
   "husky": {
     "hooks": {
