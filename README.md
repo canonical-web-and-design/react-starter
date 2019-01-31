@@ -1,5 +1,8 @@
 # Canonical Webteam React Starter
 
+## NOTE
+**New react projects should be bootstrapped with [CRA](https://github.com/facebook/create-react-app)**, and this repo should be generally considered deprecated.
+
 This provides a minimal react starter application with some sensible defaults:
 
 ## Getting Started
